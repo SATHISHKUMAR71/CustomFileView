@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFB300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Files"
+        app:titleCentered="true" />
+
+    <com.example.customfilesview.CustomFilesView
+        android:id="@+id/customFilesView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fileCreated="12/09/2023"
+        app:fileIcon="@drawable/baseline_camera_alt_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+        app:setFileSize="173 KB"
+        app:setFilename="Camera" />
+
+    <com.example.customfilesview.CustomFilesView
+        android:id="@+id/customFilesView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fileCreated="09/03/2003"
+        app:fileIcon="@drawable/baseline_folder_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customFilesView"
+        app:setFileSize="103 KB"
+        app:setFilename="Files" />
+
+    <com.example.customfilesview.CustomFilesView
+        android:id="@+id/customFilesView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fileCreated="09/03/2003"
+        app:fileIcon="@drawable/baseline_folder_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customFilesView2"
+        app:setFileSize="989 KB"
+        app:setFilename="Files" />
+
+    <com.example.customfilesview.CustomFilesView
+        android:id="@+id/customFilesView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fileCreated="12/09/2000"
+        app:fileIcon="@drawable/baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customFilesView3"
+        app:setFileSize="320 MB"
+        app:setFilename="Personal Data" />
+
+    <com.example.customfilesview.CustomFilesView
+        android:id="@+id/customFilesView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fileCreated="09/03/2003"
+        app:fileIcon="@drawable/baseline_folder_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customFilesView5"
+        app:setFileSize="989 KB"
+        app:setFilename="Files" />
+
+    <com.example.customfilesview.CustomFilesView
+        android:id="@+id/customFilesView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fileCreated="09/03/2003"
+        app:fileIcon="@drawable/baseline_folder_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customFilesView2"
+        app:setFileSize="989 KB"
+        app:setFilename="Files" />
+</androidx.constraintlayout.widget.ConstraintLayout>
